@@ -49,7 +49,7 @@ python SoftBody.py
   ```
 
   The springs compute their forces after the points have moved, so those forces act on the next frame.
-- **Floor.** The physics uses $y$ pointing up and the drawing flips it. A point that goes below $y = 10$ is put back at 10 and loses its vertical velocity, so nothing bounces. In a test run with a fixed 1/60 s step the 200 px ring landed after about 3 seconds and settled about 167 px tall and 208 px wide.
+- **Floor.** The physics uses $y$ pointing up and the drawing flips it. A point that goes below $y = 10$ is put back at 10 and loses its vertical velocity, so nothing bounces. In a test run with a fixed 1/60 s step the 200 px ring touched the floor after about 2.4 seconds and settled about 167 px tall and 208 px wide.
 - **Ray-cast edge test.** `segmentCollideSemirrect` ("segment meets half-line") intersects the line through an edge with the horizontal half-line running right from a point, and accepts the crossing only if the point's height lies strictly between the edge's endpoints. Counting the crossings gives the even-odd rule: an odd count means the point is inside the outline. `draw` applies it to the mouse position; `update` already counts crossings for the points of other soft bodies but does nothing with the count yet.
 
 ## Code map
