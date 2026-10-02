@@ -1,0 +1,25 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+arduino_secrets.h
+*.pem
+*.key
+# Generated data, logs and editor files
+*.log
+*.csv
+*.pkl
+*.joblib
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
