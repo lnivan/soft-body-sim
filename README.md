@@ -7,7 +7,6 @@
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
 ![Pygame](https://img.shields.io/badge/Pygame-2.x-30363D?style=flat-square)
 ![Status](https://img.shields.io/badge/status-prototype-BF8700?style=flat-square)
-![Year](https://img.shields.io/badge/year-2023-8250DF?style=flat-square)
 
 <img src="docs/preview.gif" alt="A white ring of 30 dots falls, flattens against the floor into a dome, and outline edges turn red as a mouse pointer moves past" width="560">
 
@@ -66,10 +65,6 @@ python SoftBody.py
 - $\Delta t$ is the wall-clock frame time in an uncapped loop. The first step also includes the window start-up time, and a stiffer $k$ or a stall can make the integration unstable.
 - The ray test divides by zero if an outline edge ever becomes exactly vertical.
 - The body is drawn twice every frame, which is harmless but wasted work.
-
-## Background
-
-Written in or before June 2023; the files come from a code backup made that month and were put under version control in 2026. The backup keeps no original dates, so `SoftBodyCollisions.py` is taken as the earlier variant because it has none of the collision code. The mass-spring idea was later rebuilt from scratch in [spring-mass-simulator](https://github.com/lnivan/spring-mass-simulator).
 
 ---
 
